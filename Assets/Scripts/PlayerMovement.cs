@@ -5,9 +5,15 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float runSpeed = 12f;
-    public Rigidbody2D rigidBody;
+
+    Rigidbody2D rigidBody;
     float horizontalMove = 0f;
     float verticalMove = 0f;
+
+    void Start()
+    {
+        this.rigidBody = GetComponentInChildren<Rigidbody2D>();
+    }
 
     // Update is called once per frame
     void Update()

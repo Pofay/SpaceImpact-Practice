@@ -2,27 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletSpawner : MonoBehaviour
+public class EnemyGun : MonoBehaviour
 {
     public GameObject bulletPrefab;
     private Transform transform;
+
+    public float timeToInitialFire = 2f;
+    public float rateOfFire = 5f;
 
     // Start is called before the first frame update
     void Start()
     {
         transform = GetComponent<Transform>();
+        InvokeRepeating("Shoot", this.timeToInitialFire, this.rateOfFire);
     }
 
-    // Update is called once per frame
-    private void Update()
-    {
-        if(Input.GetButtonDown("Fire1"))
-        {
-            Shoot();
-        }
-    }
-
-    private void Shoot()
+    void Shoot()
     {
         Instantiate(bulletPrefab, transform.position, transform.rotation);
     }

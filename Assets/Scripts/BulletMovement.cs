@@ -5,8 +5,8 @@ using UnityEngine;
 public class BulletMovement : MonoBehaviour
 {
     public float runSpeed = 5f;
+    public float horizontalMove = 1f;
 
-    float verticalMove = 1f;
     Rigidbody2D rigidBody;
 
     void Start()
@@ -16,7 +16,7 @@ public class BulletMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        var velocity = new Vector2(0f, verticalMove);
+        var velocity = new Vector2(horizontalMove, 0f);
         rigidBody.velocity = velocity * runSpeed;
     }
 }

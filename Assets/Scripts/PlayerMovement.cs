@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        this.rigidBody = GetComponentInChildren<Rigidbody2D>();
+        this.rigidBody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame

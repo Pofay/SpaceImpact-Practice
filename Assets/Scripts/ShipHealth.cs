@@ -17,6 +17,7 @@ public class ShipHealth : MonoBehaviour
     {
         if (collision.CompareTag(bulletTag))
         {
+            // Health needs to be pulled up for lives.
             health -= 1;
             if (health == 0)
             {

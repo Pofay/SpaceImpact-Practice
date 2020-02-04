@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: -2329770393244399355}
   m_Layer: 0
   m_Name: Reginald
-  m_TagString: Standard_Enemy_Bullet
+  m_TagString: Standard_Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 013e43006247bc343ad47fcf36ff66c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 3
+  runSpeed: 0.75
 --- !u!61 &2739846762207581770
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -189,3 +189,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 879751bb67b32fe4996f15a3e7d58465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  scoreOnDeath: 100

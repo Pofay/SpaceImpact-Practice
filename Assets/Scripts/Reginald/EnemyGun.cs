@@ -17,9 +17,9 @@ public class EnemyGun : MonoBehaviour
         InvokeRepeating("Shoot", this.timeToInitialFire, this.rateOfFire);
     }
 
+    // Duplicate in EnemyGun and BulletSpawner
     void Shoot()
     {
         Instantiate(bulletPrefab, transform.position, transform.rotation);
     }
-
 }

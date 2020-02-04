@@ -1,29 +1,22 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ShipHealth : MonoBehaviour
+class ShipHealth : MonoBehaviour, IOnHitEffect
 {
-    public float health = 3;
-    public string bulletTag = "Standard_Enemy_Bullet";
-    public IShipDeath shipDeath; // Should be on Hit Effect
+    public int health = 3;
 
-    void Start()
+    public void Apply()
     {
-        shipDeath = GetComponent<IShipDeath>();
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag(bulletTag))
+        health -= 1;
+        if (health == 0)
         {
-            // Health needs to be pulled up for lives.
-            health -= 1;
-            if (health == 0)
-            {
-                this.shipDeath.Apply();
-            }
-            Destroy(collision.gameObject);
+            this.gameObject.SetActive(false);
         }
     }
 }
+

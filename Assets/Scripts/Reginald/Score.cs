@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
-class EnemyShipDeath : MonoBehaviour, IShipDeath
+class Score : MonoBehaviour, IOnHitEffect
 {
+    public int score = 100;
     public Text scoreText;
-
-    public int scoreOnDeath = 100;
     private ScoreTracker scoreTracker;
 
     void Start()
@@ -20,7 +19,10 @@ class EnemyShipDeath : MonoBehaviour, IShipDeath
 
     public void Apply()
     {
-        Destroy(this.gameObject);
-        scoreTracker.UpdateScore(scoreOnDeath);
+        if (!this.gameObject.activeSelf)
+        {
+            this.scoreTracker.UpdateScore(score);
+        }
     }
 }
+

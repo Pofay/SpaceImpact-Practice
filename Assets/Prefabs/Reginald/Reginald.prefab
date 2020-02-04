@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 1439902880110740999}
   - component: {fileID: 1439902880110740996}
   - component: {fileID: 2739846762207581770}
-  - component: {fileID: 3884318756885826648}
-  - component: {fileID: -2329770393244399355}
+  - component: {fileID: -4765585824233626475}
+  - component: {fileID: -8787884258723402638}
+  - component: {fileID: -9110069070257672755}
   m_Layer: 0
   m_Name: Reginald
   m_TagString: Standard_Enemy
@@ -163,7 +164,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.82, y: 0.71}
   m_EdgeRadius: 0
---- !u!114 &3884318756885826648
+--- !u!114 &-4765585824233626475
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -175,9 +176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876a9db644709644b81bb174854ed46f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
   bulletTag: Player_Bullet
---- !u!114 &-2329770393244399355
+--- !u!114 &-8787884258723402638
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,8 +186,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1439902880110740995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 879751bb67b32fe4996f15a3e7d58465, type: 3}
+  m_Script: {fileID: 11500000, guid: cfeff878ec41d73449c9ab7f624ae986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 3
+--- !u!114 &-9110069070257672755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439902880110740995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82eab1423937ca14d8227bb77205c98a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 100
   scoreText: {fileID: 0}
-  scoreOnDeath: 100
+  scoreTracker: {fileID: 0}

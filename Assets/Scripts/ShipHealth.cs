@@ -6,7 +6,7 @@ public class ShipHealth : MonoBehaviour
 {
     public float health = 3;
     public string bulletTag = "Standard_Enemy_Bullet";
-    public IShipDeath shipDeath;
+    public IShipDeath shipDeath; // Should be on Hit Effect
 
     void Start()
     {
@@ -23,6 +23,7 @@ public class ShipHealth : MonoBehaviour
             {
                 this.shipDeath.Apply();
             }
+            Destroy(collision.gameObject);
         }
     }
 }

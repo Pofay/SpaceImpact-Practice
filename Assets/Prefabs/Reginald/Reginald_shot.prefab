@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5630659229700324453}
   - component: {fileID: 5630659229700324449}
   - component: {fileID: 5630659229700324448}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Reginald_shot
   m_TagString: Standard_Enemy_Bullet
   m_Icon: {fileID: 0}

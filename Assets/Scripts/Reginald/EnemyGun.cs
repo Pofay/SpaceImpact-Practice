@@ -22,4 +22,9 @@ public class EnemyGun : MonoBehaviour
     {
         Instantiate(bulletPrefab, transform.position, transform.rotation);
     }
+
+    private void OnDisable()
+    {
+        CancelInvoke("Shoot");
+    }
 }

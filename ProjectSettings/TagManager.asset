@@ -17,10 +17,10 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - background
+  - Bullets
   - 
   - 
   - 
@@ -43,4 +43,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 1488053591
+    locked: 0
+  - name: Enemy
+    uniqueID: 3543030825
+    locked: 0
+  - name: Bullets
+    uniqueID: 800809495
+    locked: 0
+  - name: background
+    uniqueID: 103022523
     locked: 0

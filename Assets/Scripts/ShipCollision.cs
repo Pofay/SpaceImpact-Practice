@@ -5,18 +5,18 @@ using UnityEngine;
 public class ShipCollision : MonoBehaviour
 {
     public string bulletTag = "Standard_Enemy_Bullet";
-    public IOnHitEffect[] shipOnHitEffects; 
+    public IOnHitEffect[] onHitEffects; 
 
     void Start()
     {
-        shipOnHitEffects = GetComponents<IOnHitEffect>();
+        onHitEffects = GetComponents<IOnHitEffect>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag(bulletTag))
         {
-            foreach (var effect in shipOnHitEffects)
+            foreach (var effect in onHitEffects)
             {
                 effect.Apply();
             }

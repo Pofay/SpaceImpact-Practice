@@ -31,4 +31,6 @@ public class FirstLevelSpawner : MonoBehaviour
             instanceNumber++;
         }
     }
+
+
 }

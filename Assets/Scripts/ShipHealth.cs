@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
-class ShipHealth : MonoBehaviour, IOnHitEffect
+public class ShipHealth : MonoBehaviour, IOnHitEffect
 {
     public int health = 3;
 

@@ -9,12 +9,11 @@ using UnityEngine.UI;
 class Score : MonoBehaviour, IOnHitEffect
 {
     public int score = 100;
-    // public Text scoreText;
+
     private ScoreTracker scoreTracker;
 
     void Start()
     {
-        //scoreTracker = scoreText.GetComponent<ScoreTracker>();
         scoreTracker = GameObject.Find("Score").GetComponent<ScoreTracker>();
     }
 

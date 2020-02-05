@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthIndicator : MonoBehaviour
 {
-    public Text healthText;
+    public TextMeshProUGUI healthText;
     public GameObject player;
     private ShipHealth playerHealth;
 

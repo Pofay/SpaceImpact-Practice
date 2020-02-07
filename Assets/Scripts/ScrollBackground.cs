@@ -10,14 +10,12 @@ public class ScrollBackground : MonoBehaviour
 
     private void Start()
     {
-        //this.renderer = GetComponent<MeshRenderer>();
-        //this.material = renderer.material; 
+        this.renderer = GetComponent<MeshRenderer>();
+        this.material = renderer.material; 
     }
     // Update is called once per frame
     void Update()
     {
-        var renderer = GetComponent<MeshRenderer>();
-        var material = renderer.material;
         var offset = material.mainTextureOffset;
 
         offset.x += Time.deltaTime / scrollSpeed;

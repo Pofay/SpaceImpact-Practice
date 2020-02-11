@@ -716,7 +716,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 965233288}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe74c9542c1f594c9b7897411346d6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9eac4498d9af9664fa8b0dad456b2c14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   healthText: {fileID: 965233291}
@@ -1541,7 +1541,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1956468136}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66fd801e6c2afbd488e2ff163911b186, type: 3}
+  m_Script: {fileID: 11500000, guid: e1f5eb7cd7ba3af4d81013cce5dfe0a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1956468139}

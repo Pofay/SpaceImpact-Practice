@@ -10,11 +10,11 @@ class Score : MonoBehaviour, IOnHitEffect
 {
     public int score = 100;
 
-    private ScoreTracker scoreTracker;
+    private ScoreIndicator scoreTracker;
 
     void Start()
     {
-        scoreTracker = GameObject.Find("ScoreIndicator").GetComponent<ScoreTracker>();
+        scoreTracker = GameObject.Find("ScoreIndicator").GetComponent<ScoreIndicator>();
     }
 
     public void Apply()

@@ -183,7 +183,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6378710889771388470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfeff878ec41d73449c9ab7f624ae986, type: 3}
+  m_Script: {fileID: 11500000, guid: d89ababc162fd7f4097fbf7c939ddfc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6378710889771388470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 876a9db644709644b81bb174854ed46f, type: 3}
+  m_Script: {fileID: 11500000, guid: 35c335ead7ba7bb489b9320eb576e5ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bulletTag: Standard_Enemy_Bullet
@@ -228,6 +228,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6378710889771388470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: accf12d881eec7543a59d530c05db629, type: 3}
+  m_Script: {fileID: 11500000, guid: 47b086662519de74e8f345755fcb7a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

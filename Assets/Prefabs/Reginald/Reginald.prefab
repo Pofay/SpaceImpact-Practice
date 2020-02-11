@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: -4765585824233626475}
   - component: {fileID: -8787884258723402638}
   - component: {fileID: -9110069070257672755}
+  - component: {fileID: 4248255244013921253}
+  - component: {fileID: 662760215030838374}
   m_Layer: 0
   m_Name: Reginald
   m_TagString: Standard_Enemy
@@ -137,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 013e43006247bc343ad47fcf36ff66c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 0.75
+  runSpeed: 0
 --- !u!61 &2739846762207581770
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -203,3 +205,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 100
+--- !u!114 &4248255244013921253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439902880110740995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accf12d881eec7543a59d530c05db629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &662760215030838374
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439902880110740995}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b60830444e2fc4149b7b19dca6dcb0fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

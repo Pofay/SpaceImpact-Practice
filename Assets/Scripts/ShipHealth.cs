@@ -9,13 +9,19 @@ using UnityEngine.UI;
 public class ShipHealth : MonoBehaviour, IOnHitEffect
 {
     public int health = 3;
+    private ShipAnimation animation;
+
+    public void Start()
+    {
+        animation = GetComponent<ShipAnimation>();
+    }
 
     public void Apply()
     {
         health -= 1;
         if (health == 0)
         {
-            this.gameObject.SetActive(false);
+            animation.ExecuteAnimation();
         }
     }
 }

@@ -15,6 +15,8 @@ public class ShipAnimation : MonoBehaviour
     {
         animator.SetBool("IsDestroyed", true);
         Invoke("DisableGameObject", 0.75f);
+        var collision = this.GetComponent<ShipCollision>();
+        Destroy(collision);
     }
 
     public void DisableGameObject()

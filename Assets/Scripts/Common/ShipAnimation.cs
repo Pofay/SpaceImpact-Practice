@@ -18,9 +18,12 @@ public class ShipAnimation : MonoBehaviour
     {
         animator.SetBool("IsDestroyed", true);
         Invoke("DisableGameObject", 0.75f);
+        // Should definitely move to another command object
         audioManager.Play("ShipDeath");
         var collision = this.GetComponent<ShipCollision>();
+        var collider = this.GetComponent<BoxCollider2D>();
         Destroy(collision);
+        Destroy(collider);
     }
 
     public void DisableGameObject()

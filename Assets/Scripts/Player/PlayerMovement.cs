@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     float horizontalMove = 0f;
     float verticalMove = 0f;
 
+
     void Start()
     {
         this.rigidBody = GetComponent<Rigidbody2D>();
@@ -18,8 +19,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal");
-        verticalMove = Input.GetAxisRaw("Vertical"); 
+        verticalMove = Input.GetAxisRaw("Vertical");
     }
 
     void FixedUpdate()

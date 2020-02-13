@@ -16,9 +16,10 @@ GameObject:
   - component: {fileID: 2739846762207581770}
   - component: {fileID: -4765585824233626475}
   - component: {fileID: -8787884258723402638}
-  - component: {fileID: -9110069070257672755}
   - component: {fileID: 4248255244013921253}
   - component: {fileID: 662760215030838374}
+  - component: {fileID: -8812736262098874364}
+  - component: {fileID: -5669618420551708953}
   m_Layer: 0
   m_Name: Reginald
   m_TagString: Standard_Enemy
@@ -191,19 +192,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletTag: Player_Bullet
---- !u!114 &-9110069070257672755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1439902880110740995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82eab1423937ca14d8227bb77205c98a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 100
 --- !u!114 &4248255244013921253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,3 +224,28 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-8812736262098874364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439902880110740995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f52802ae485a73e49992b3081041a5ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5669618420551708953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439902880110740995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4b7755f83bd73f41ab615c487eb984c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 100

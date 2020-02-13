@@ -9,11 +9,11 @@ using UnityEngine.UI;
 public class ShipHealth : MonoBehaviour, IOnHitEffect
 {
     public int health = 3;
-    private ShipAnimation animation;
+    private IOnDeathEffect[] deathEffects;
 
     public void Start()
     {
-        animation = GetComponent<ShipAnimation>();
+        deathEffects = GetComponents<IOnDeathEffect>();
     }
 
     public void Apply()
@@ -21,7 +21,10 @@ public class ShipHealth : MonoBehaviour, IOnHitEffect
         health -= 1;
         if (health == 0)
         {
-            animation.ExecuteAnimation();
+            foreach (var e in deathEffects)
+            {
+                e.Execute();
+            }
         }
     }
 }

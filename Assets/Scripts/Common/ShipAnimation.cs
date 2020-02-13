@@ -2,28 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShipAnimation : MonoBehaviour
+public class ShipAnimation : MonoBehaviour, IOnDeathEffect
 {
     private Animator animator;
-    private AudioManager audioManager;
 
     // Start is called before the first frame update
     void Start()
     {
         this.animator = GetComponent<Animator>();
-        this.audioManager = FindObjectOfType<AudioManager>();
     }
 
-    public void ExecuteAnimation()
+    public void Execute()
     {
         animator.SetBool("IsDestroyed", true);
+        // Should be moved to a "Cleanup" death effect
         Invoke("DisableGameObject", 0.75f);
-        // Should definitely move to another command object
-        audioManager.Play("ShipDeath");
-        var collision = this.GetComponent<ShipCollision>();
-        var collider = this.GetComponent<BoxCollider2D>();
-        Destroy(collision);
-        Destroy(collider);
     }
 
     public void DisableGameObject()
@@ -35,5 +28,4 @@ public class ShipAnimation : MonoBehaviour
     {
         CancelInvoke("DisableGameObject");
     }
-
 }

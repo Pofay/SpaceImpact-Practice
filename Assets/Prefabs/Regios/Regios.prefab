@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1321786828588302655}
   - component: {fileID: 4755415357313794901}
   - component: {fileID: 3175200183465492398}
+  - component: {fileID: 9220406185601331560}
   m_Layer: 0
   m_Name: Regios
   m_TagString: Standard_Enemy
@@ -224,3 +225,19 @@ MonoBehaviour:
   bulletPrefab: {fileID: 0}
   timeToInitialFire: 1
   rateOfFire: 2
+--- !u!114 &9220406185601331560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3772500767841809881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 204c198df2d819b44b30064eaa20cc74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 225006318012774049, guid: d42639adfcefe874f8c03771ef1bd1df,
+    type: 3}
+  timeToInitialFire: 6
+  rateOfFire: 6

@@ -20,7 +20,6 @@ public class EnemyGun : MonoBehaviour
     // Duplicate in EnemyGun and BulletSpawner
     void Shoot()
     {
-        Debug.Log(transform.rotation);
         Instantiate(bulletPrefab, transform.position, bulletPrefab.gameObject.transform.rotation);
     }
 

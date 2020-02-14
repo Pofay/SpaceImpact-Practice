@@ -1791,28 +1791,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b912c4c8c775e44f959923b5b03bd40, type: 3}
---- !u!1 &912224536289282452 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3772500767841809881, guid: 6b912c4c8c775e44f959923b5b03bd40,
-    type: 3}
-  m_PrefabInstance: {fileID: 912224536289282451}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &912224536289282453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 912224536289282452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 204c198df2d819b44b30064eaa20cc74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 225006318012774049, guid: d42639adfcefe874f8c03771ef1bd1df,
-    type: 3}
-  timeToInitialFire: 6
-  rateOfFire: 6
 --- !u!1001 &1657616308410949816
 PrefabInstance:
   m_ObjectHideFlags: 0

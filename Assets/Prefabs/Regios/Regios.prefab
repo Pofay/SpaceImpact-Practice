@@ -18,6 +18,8 @@ GameObject:
   - component: {fileID: 4755415357313794901}
   - component: {fileID: 3175200183465492398}
   - component: {fileID: 9220406185601331560}
+  - component: {fileID: 5490245184562250334}
+  - component: {fileID: -2613307934902075198}
   m_Layer: 0
   m_Name: Regios
   m_TagString: Standard_Enemy
@@ -241,3 +243,37 @@ MonoBehaviour:
     type: 3}
   timeToInitialFire: 6
   rateOfFire: 6
+--- !u!114 &5490245184562250334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3772500767841809881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 013e43006247bc343ad47fcf36ff66c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runSpeed: 0.35
+--- !u!50 &-2613307934902075198
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3772500767841809881}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
